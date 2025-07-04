@@ -1,0 +1,54 @@
+@import '../../normalize/normalize.css';
+
+
+.container-form{
+    background-color: #ffffff;
+    box-shadow:  3px 4px 4px rgba(0, 0, 0, 0.08);
+    position: fixed;
+    bottom:0;
+    right: 0;
+    left: 0;
+    margin: 10px;
+    border-radius: 50px;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-form-text{
+    margin-left: 10px;
+}
+.container-btn-form{
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #008069;
+    height: 32px;
+    width: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.textarea {
+    width: 80vw;
+    border-radius: 8px;
+    background-color: white;
+    resize: none;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    display: flex;
+    align-items: center;
+    border: none;
+} 
+
+.textarea::placeholder {
+    color: #667781; 
+    opacity: 0.8;
+    font-size: 15px;
+} 
+.btn{
+    background-color: transparent;
+    border: none;
+    color: #ffffff;
+}
+

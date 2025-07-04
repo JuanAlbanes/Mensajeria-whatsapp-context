@@ -1,0 +1,10 @@
+@import '../../normalize/normalize.css';
+
+.img-contact-item{
+    width: 30px;
+    height: 30px;
+}
+.container-contact-item{
+    display: flex;
+    flex-direction: column;
+}
