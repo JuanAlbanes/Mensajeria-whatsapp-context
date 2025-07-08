@@ -6,7 +6,6 @@ const mook_data = {
                 name: 'Leó Szilárd',
                 number_phone: '+36-1-555-1023',
                 last_time_connected: '10:10',
-                /* img: '/src/img/Szilard.jpg', */
                 img: '/Szilard.jpg',
                 last_message: {
                     id: 1,
@@ -50,7 +49,6 @@ const mook_data = {
                 name: 'Robert Oppenheimer',
                 number_phone: '+1-202-558-0137',
                 last_time_connected: '10:15',
-                /* img: '/src/img/Oppenheimer.jpg', */
                 img: '/Oppenheimer.jpg',
                 last_message: {
                     id: 1,
@@ -95,7 +93,6 @@ const mook_data = {
                 name: 'Franklin Roosevelt',
                 number_phone: '+1-917-565-0198',
                 last_time_connected: '11:10',
-                /* img: '/src/img/Roosevelt.jpg', */
                 img: '/Roosevelt.jpg',
                 last_message: {
                     id: 1,
