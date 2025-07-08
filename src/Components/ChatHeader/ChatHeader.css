@@ -1,0 +1,99 @@
+@import '../../normalize/normalize.css';
+
+.container-chat-header{
+    position: static;
+}
+.chat-header{
+    height: 15vh;
+    background-color: #008069;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    padding: 0 20px;
+    gap: 60px;
+    
+}
+.img-contact-item-header{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+}
+.container-contact-information{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px; 
+}
+.chat-header a{
+    text-decoration: none;
+}
+
+.container-contact-connection{
+    display: flex;
+    flex-direction: column;
+}
+.container-btn-go-home{
+    width: 30px;
+    height: 30px;
+    font-size: 25px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container-btn-go-home:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+.container-btn-go-home a{
+    color: #ffffff;
+}
+.container-multimedia-icon{
+    font-size: 25px;
+    color: #ffffff;
+    position: absolute;
+    right: 20px;
+    display: flex;
+    gap: 20px;
+}
+.contact-name{
+    color: #ffffff;
+    font-size: 18px;
+}
+.container-contact-connection span{
+    color: #ffffff;
+    font-size: 16px;
+}
+.container-bomb-icon{
+    color: rgb(228, 6, 6);
+}
+.container-bomb-icon:hover{
+    transform: scale(1.2);
+    transition: all 0.5s ease;
+}
+
+@media (max-width: 530px){
+    .chat-header{
+        gap: 5px;
+    }
+}
+@media (max-width: 470px){
+    .container-btn-go-home{
+        font-size: 18px;
+    }
+    .contact-name{
+        font-size: 14px;
+    }
+    .container-contact-connection span{
+        font-size: 12px;
+    }
+    .container-multimedia-icon{
+        font-size: 18px;
+    }
+}
+@media (max-width: 390px){
+    .container-call-video-icon{
+        display: none;
+    }
+}

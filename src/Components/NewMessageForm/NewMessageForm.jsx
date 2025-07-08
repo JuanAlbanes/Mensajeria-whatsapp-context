@@ -16,7 +16,8 @@ export default function NewMessageForm() {
         <form onSubmit={handleSubmitNewMessage} className='container-form'>
             <div className='container-form-text'>
                 <label htmlFor="text"></label>
-                <textarea id='text' 
+                <textarea 
+                id='text' 
                 name='text' 
                 required 
                 className='textarea' 

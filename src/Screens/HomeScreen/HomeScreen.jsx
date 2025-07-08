@@ -5,13 +5,15 @@ import { Link, useParams } from 'react-router'
 import { MessagesContext } from '../../Context/MessagesContext'
 import LoaderSpinner from '../../Components/LoaderSpinner/LoaderSpinner'
 import './HomeScreen.css'
-import mook_data from '../../data/contact-mook'
+import ChatHeader from '../../Components/ChatHeader/ChatHeader.jsx'
 
 
-export default function HomeScreen({name, id , last_time_connected, img, last_message, unread_messages}) {
+
+export default function HomeScreen() {
 
     const {contact_id} = useParams()
     const {loadMessages, isMessagesLoading} = useContext(MessagesContext)
+
     useEffect(
         () => {
             loadMessages(contact_id)
@@ -26,17 +28,7 @@ export default function HomeScreen({name, id , last_time_connected, img, last_me
     }
     return (
         <div>
-            <Link to={`/contacts/${contact_id}/detail`}>
-                <header className='chat-header'>
-                    <div className='container-contact-information'>
-                        <img src="" alt="" />
-                            <div className='container-contact-connection'>
-                                <h3 className='contact-name'>{name}</h3>
-                                <span></span>
-                            </div>
-                    </div>
-                </header>
-            </Link>
+            <ChatHeader/>
             <Chat/>
 			<NewMessageForm/>
         </div>

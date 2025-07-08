@@ -1,10 +1,63 @@
 @import '../../normalize/normalize.css';
 
 .img-contact-item{
-    width: 30px;
-    height: 30px;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
 }
 .container-contact-item{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid rgb(155, 149, 149);
+}
+.container-contact-item:hover{
+    background-color:#c9c4c0 ;
+}
+.container-contact-name-message{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.container-name-message{
+    display: flex;
     flex-direction: column;
+
+}
+.container-contacts a{
+    text-decoration: none;
+    color: black;
+}
+.container-unread-messages-last-time-connected{
+    display: flex;
+    flex-direction: column;
+}
+.unread-messages{
+    background-color: #008069;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+}
+.container-last-message{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.container-last-message-text-alternative{
+    display: none;
+}
+
+@media (max-width: 900px){
+    .container-last-message-text-alternative{
+        display: flex;
+        align-items: center;
+        gap: 5px;
+    }
+    .container-last-message{
+        display: none;
+    }
 }

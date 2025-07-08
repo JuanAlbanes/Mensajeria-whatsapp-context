@@ -1,4 +1,4 @@
-
+@import '../../normalize/normalize.css';
 .chat-dialog {
 display: inline-flex; 
 align-items: center;
@@ -32,4 +32,16 @@ color: #667781;
 }
 .status-check{
     font-size: 20px;
+}
+.status-check.status-seen {
+    color: #34b7f1; 
+}
+.text-messages-chat{
+    font-size: 16px
+}
+
+@media (max-width: 470px){
+    .text-messages-chat{
+        font-size: 12px;
+    }
 }
