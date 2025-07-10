@@ -40,17 +40,17 @@ export default function ChatHeader() {
                 </div>
                 </Link>
                 <div className='container-multimedia-icon'>
-                    <div className='container-call-video-icon'>
+                    <button className='container-call-video-icon'>
                         <LuVideo />
-                    </div>
-                    <div className='container-call-video-icon'>
+                    </button>
+                    <button className='container-call-video-icon'>
                         <MdOutlinePhone />
-                    </div>
-                    <div className='container-bomb-icon'>
+                    </button>
+                    <button className='container-bomb-icon'>
                         <GiNuclearBomb
                         onClick={handleAlertBomb}
                         />
-                    </div>
+                    </button>
                 </div>
             </header>
         </div>

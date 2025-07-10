@@ -1,12 +1,12 @@
 @import '../../normalize/normalize.css';
 
 .container-messages{
-    min-height: 100vh;
+    min-height: 88vh;
     display: flex;
     flex-direction: column;
     gap: 20px;
     background-color: #E5DDD5;
-    padding: 135px 10px 0px;
+    padding: 40px 10px 0px;
 }
 .container-no-messages{
     display: flex;

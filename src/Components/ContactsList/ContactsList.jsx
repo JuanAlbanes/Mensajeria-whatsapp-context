@@ -18,7 +18,7 @@ const ContactsList = () => {
     return (
         <div className="container-contact-list">
             <header className="whatsapp-header">
-                    <h1>WhatsApp War</h1>
+                    <h1 className="title-header">WhatsApp War</h1>
             </header>
             <form className="search-bar">
                 <input

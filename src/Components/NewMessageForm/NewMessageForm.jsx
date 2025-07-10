@@ -16,14 +16,13 @@ export default function NewMessageForm() {
         <form onSubmit={handleSubmitNewMessage} className='container-form'>
             <div className='container-form-text'>
                 <label htmlFor="text"></label>
-                <textarea 
+                <input 
                 id='text' 
                 name='text' 
                 required 
-                className='textarea' 
-                placeholder="Escribe un mensaje"> 
-                
-                </textarea>
+                className='textarea-container' 
+                placeholder="Escribe un mensaje"
+                />
             </div>
             <div className='container-btn-form'>
                 <button type='submit' className='btn'><IoSend /></button>

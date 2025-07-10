@@ -4,19 +4,17 @@
     position: static;
 }
 .chat-header{
-    height: 15vh;
-    background-color: #008069;
+    height: 12vh;
+    background-color: #1A1B1F;
     display: flex;
     align-items: center;
-    position: fixed;
-    width: 100%;
     padding: 0 20px;
     gap: 60px;
     
 }
 .img-contact-item-header{
-    width: 35px;
-    height: 35px;
+    width: 60px;
+    height: 60px;
     border-radius: 50%;
 }
 .container-contact-information{
@@ -65,8 +63,17 @@
     color: #ffffff;
     font-size: 16px;
 }
+.container-call-video-icon{
+    font-size: 24px;
+    border: none;
+    background-color: transparent;
+    color: #ffffff;
+}
 .container-bomb-icon{
     color: rgb(228, 6, 6);
+    font-size: 24px;
+    border: none;
+    background-color: transparent;
 }
 .container-bomb-icon:hover{
     transform: scale(1.2);

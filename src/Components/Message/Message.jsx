@@ -18,7 +18,7 @@ export default function Message({ emisor, hora, id, texto, status}) {
         <div className={classNames.message} >
             <span className='text-messages-chat'> {texto} </span>
             <div className='container-time-status'>
-                <span>{hora}</span>
+                <span className='time'>{hora}</span>
                 {emisor === 'YO' && (
                     <span className={classNames.statusCheck}><PiChecks /></span>
                 )}

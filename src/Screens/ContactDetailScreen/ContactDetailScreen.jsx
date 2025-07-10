@@ -7,6 +7,7 @@ import { MdOutlinePhone } from "react-icons/md";
 import { LuVideo } from "react-icons/lu";
 import { IoSearchSharp } from "react-icons/io5";
 import { FaArrowLeftLong } from "react-icons/fa6";
+import { FaPhone } from "react-icons/fa";
 
 
 export default function ContactDetailScreen() {
@@ -24,33 +25,38 @@ export default function ContactDetailScreen() {
         )
     }
     return (
-        <div className='container-contact-detail'>
+        <div className='container-general-contact-detail'>
             <header className='header-contact-detail'>
                 <Link to={`/contacts/${contact_id}/messages`}><FaArrowLeftLong /></Link>
-                <h1>{contact_detail.name}</h1>
+                <h1 className='name-contact'>{contact_detail.name}</h1>
             </header>
-            <img src={contact_detail.img} alt={`${contact_detail.name} image profile`} className='img-contact-profile' />
-            <h3 className='name-contact'>
-                {contact_detail.number_phone}
-            </h3>
-            <div className='container-multimedia-contact-profile'>
-                <div className='container-multimedia'>
-                    <MdOutlinePhone />
-                    <span>
-                        Llamar
-                    </span>
+            <div className='container-detail'>
+                <div className='container-img-detail'>
+                    <img src={contact_detail.img} alt={`${contact_detail.name} image profile`} className='img-contact' />
                 </div>
-                <div className='container-multimedia'>
-                    <LuVideo />
-                    <span>
-                        Video
-                    </span>
-                </div>
-                <div className='container-multimedia'>
-                    <IoSearchSharp />
-                    <span>
-                        Buscar
-                    </span>
+                <h3 className='number-phone-contact'>
+                    <div className='container-phone-icon'><FaPhone /></div>
+                    {contact_detail.number_phone}
+                </h3>
+                <div className='container-multimedia-contact-profile'>
+                    <button className='container-multimedia'>
+                        <MdOutlinePhone />
+                        <span>
+                            Llamar
+                        </span>
+                    </button>
+                    <button className='container-multimedia'>
+                        <LuVideo />
+                        <span>
+                            Video
+                        </span>
+                    </button>
+                    <button className='container-multimedia'>
+                        <IoSearchSharp />
+                        <span>
+                            Buscar
+                        </span>
+                    </button>
                 </div>
             </div>
         </div>

@@ -1,4 +1,5 @@
 @import '../../normalize/normalize.css';
+
 .chat-dialog {
 display: inline-flex; 
 align-items: center;
@@ -17,21 +18,27 @@ background-color: #dcf8c6;
 }
 
 .container-time-status {
-display: flex;
-align-items: center;
-gap: 5px;
-align-self: flex-end; 
-font-size: 0.75rem;
-color: #667781;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    align-self: flex-end; 
+    color: #667781;
+}
+.time{
+    font-size: 16px;
 }
 .delete-message-btn{
     background-color: transparent;
     border: none;
     color: red;
-    font-size: 20px;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
 }
 .status-check{
-    font-size: 20px;
+    font-size: 24px;
+    display: flex;
+    align-items: center;
 }
 .status-check.status-seen {
     color: #34b7f1; 
